@@ -1,11 +1,14 @@
 import "./App.css";
+import "./Dictionary.css";
 import React from "react";
+import Dictionary from "./Dictionary";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Dictionary App</h1>
       <button className="btn btn-primary">Click here</button>
+      <Dictionary />
       <p></p>
       <footer>
         {" "}

@@ -1,10 +1,10 @@
-.App {
+.Dictionary body {
   font-family: arial, sans-serif;
   margin: 30px auto;
   border-radius: 4px;
-  background-color: rgb(244, 181, 224);
+  background-color: violet;
 }
 
-.App h1 {
+.Dictionary h1 {
   font-size: 26px;
 }
