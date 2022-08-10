@@ -4,22 +4,36 @@ export default function Meaning(props) {
   console.log(props.meaning);
   return (
     <div className="Meaning">
-      <h4>{props.meaning.partOfSpeech}</h4>
-      <h4>{" " + props.meaning.synonyms + " " + " "} </h4>
-      <p>{" " + props.meaning.antonyms + " " + " "}</p>
+      <h6>
+        {" "}
+        <strong> Part of Speech:</strong> {props.meaning.partOfSpeech}
+      </h6>
+      <br />
+      <h5>
+        <strong> Synonym(s):</strong> {" " + props.meaning.synonyms + " " + " "}{" "}
+      </h5>
+      <br />
+      <strong> Antonym(s): </strong>
+      <h5>{" " + props.meaning.antonyms + " " + " "}</h5>
+      <br />
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <p>
-              {definition.definition}
+            <h5>
+              <strong> Definition: </strong>
+              {" " + definition.definition}
+            </h5>
+
+            <h5>
+              {" "}
+              <h6>
+                - Example: <em> {" " + definition.example}</em>
+              </h6>
               <br />
-              <em> {definition.example}</em>
-            </p>
+            </h5>
           </div>
         );
       })}
-      {/* <p>{" " + props.meaning.definitions[0].definition + " " + " "}</p>
-      <p>{" " + props.meaning.definitions[0].example + " " + " "}</p> */}
     </div>
   );
 }
