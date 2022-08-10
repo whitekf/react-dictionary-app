@@ -16,13 +16,18 @@ export default function App() {
         <footer className="dictionaryFooter">
           {" "}
           This project is coded by{" "}
-          <a href="https://kassiewhite.netlify.app/index.html" target="_blank">
+          <a
+            href="https://kassiewhite.netlify.app/index.html"
+            target="_blank"
+            rel="noreferrer"
+          >
             Kassie White{" "}
           </a>{" "}
           and it's{" "}
           <a
             href="https://github.com/whitekf/react-dictionary-app"
             target="_blank"
+            rel="noreferrer"
           >
             Open-Sourced
           </a>
