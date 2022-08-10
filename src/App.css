@@ -1,13 +1,18 @@
+:root {
+  --primary-color: rgb(34, 109, 132);
+  --secondary-color: rgb(230, 247, 248);
+}
+
 .App {
   font-family: arial, sans-serif;
   margin: 30px auto;
   border-radius: 4px;
-  background-color: rgb(230, 247, 248);
+  background-color: var(--secondary-color);
 }
 
 .App h1 {
   font-size: 54px;
-  color: rgb(34, 109, 132);
+  color: var(--primary-color);
   text-align: center;
   margin: 30px auto;
   padding: 15px;
@@ -15,6 +20,33 @@
 
 .searchedTerm {
   font-weight: 700;
+  margin-left: 2%;
+}
+
+.Meaning {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.searchButton {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(183, 238, 238);
+}
+
+.dictionaryHeader {
+  font-weight: 500;
+}
+
+.searchButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+  outline: aquamarine;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(183, 238, 238);
+  cursor: pointer;
 }
 
 .secret {

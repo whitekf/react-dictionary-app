@@ -28,7 +28,7 @@ export default function Meaning(props) {
             <h5>
               {" "}
               <h6>
-                - Example: <em> {definition.example}</em>
+                - - Example: <em> {definition.example}</em>
               </h6>
               <br />
             </h5>
