@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import "./App.css";
 import axios from "axios";
+import Results from "./Results";
 
 export default function Dictionary() {
   let [term, setTerm] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleResonse(response) {
-    console.log(response.data[0]);
     console.log(response.data);
+    console.log(term);
+    setResults(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
+
     // documentation:  https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${term}`;
     axios.get(apiUrl).then(handleResonse);
@@ -39,6 +43,7 @@ export default function Dictionary() {
             className="btn btn-primary w-50"
           />
         </form>
+        <Results results={results} />
       </div>
     </div>
   );
