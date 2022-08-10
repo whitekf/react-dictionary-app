@@ -2,12 +2,15 @@
   font-family: arial, sans-serif;
   margin: 30px auto;
   border-radius: 4px;
-  background-color: rgb(255, 236, 249);
+  background-color: rgb(230, 247, 248);
 }
 
 .App h1 {
   font-size: 54px;
-  color: blueviolet;
+  color: rgb(34, 109, 132);
+  text-align: center;
+  margin: 30px auto;
+  padding: 15px;
 }
 
 .dictionaryFooter {
