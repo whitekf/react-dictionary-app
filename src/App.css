@@ -28,16 +28,22 @@
   margin-right: 5%;
 }
 
+.dictionaryHeader {
+  margin-top: 13%;
+  padding-top: 3%;
+  font-weight: 500;
+}
+
+.form-control {
+  user-select: all;
+}
+
 .searchButton {
   background-color: var(--primary-color);
   color: white;
   outline: none;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(183, 238, 238);
-}
-
-.dictionaryHeader {
-  font-weight: 500;
 }
 
 .searchButton:hover {

@@ -9,7 +9,19 @@ export default function App() {
     <div className="App">
       <div className="container">
         {/* <img src="./KassLogo.jpg" className="AppLogo" alt="logo" /> */}
-        <h1 className="dictionaryHeader">Dictionary App</h1>
+        <h1 className="dictionaryHeader">
+          Dictionary App{" "}
+          <a
+            href="https://www.freeiconspng.com/img/25701"
+            title="Image from freeiconspng.com"
+          >
+            <img
+              src="https://www.freeiconspng.com/uploads/blue-book-png-31.png"
+              width="70"
+              alt="blue book png"
+            />
+          </a>
+        </h1>
         <Dictionary />
         <p></p>
         <footer className="dictionaryFooter">
