@@ -7,12 +7,12 @@ export default function Dictionary() {
 
   function handleResonse(response) {
     console.log(response.data[0]);
-
     console.log(response.data);
   }
 
   function search(event) {
     event.preventDefault();
+    // documentation:  https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${term}`;
     axios.get(apiUrl).then(handleResonse);
   }
