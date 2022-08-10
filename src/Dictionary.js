@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
+import "./App.css";
 import axios from "axios";
 
 export default function Dictionary() {
@@ -23,16 +24,22 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input
-          type="search"
-          onChange={handleTermChange}
-          placeholder="Enter a word..."
-          className="form-control"
-          autoFocus="on"
-        />
-        <input type="submit" value="Search" className="btn btn-primary w-50" />
-      </form>
+      <div className="searchBar">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            onChange={handleTermChange}
+            placeholder="Enter a word..."
+            className="form-control"
+            autoFocus="on"
+          />
+          <input
+            type="submit"
+            value="Search"
+            className="btn btn-primary w-50"
+          />
+        </form>
+      </div>
     </div>
   );
 }

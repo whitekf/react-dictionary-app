@@ -10,7 +10,6 @@ export default function App() {
       <div className="container">
         {/* <img src="./KassLogo.jpg" className="AppLogo" alt="logo" /> */}
         <h1>Dictionary App</h1>
-        <button className="btn btn-primary">Click here</button>
         <Dictionary />
         <p></p>
         <footer className="dictionaryFooter">
