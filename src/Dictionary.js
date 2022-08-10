@@ -43,6 +43,9 @@ export default function Dictionary() {
             className="btn btn-primary w-50"
           />
         </form>
+      </div>
+      <br />
+      <div>
         <Results results={results} />
       </div>
     </div>
