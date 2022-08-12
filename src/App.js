@@ -32,9 +32,9 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Kassie White{" "}
+            Kassie White
           </a>{" "}
-          and it's{" "}
+          and it is{" "}
           <a
             href="https://github.com/whitekf/react-dictionary-app"
             target="_blank"

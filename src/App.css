@@ -18,9 +18,26 @@
   padding: 15px;
 }
 
+.speechPart {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-right: 1%;
+}
+
 .searchedTerm {
   font-weight: 700;
   margin-left: 2%;
+  text-transform: capitalize;
+}
+
+.phonetic {
+  margin-left: 3%;
+  font-size: 26px;
+}
+
+.phoneticTitle {
+  margin-left: 3%;
+  opacity: 0.8;
 }
 
 .Meaning {
@@ -36,6 +53,10 @@
 
 .form-control {
   user-select: all;
+}
+
+.Meaning {
+  opacity: 0.8;
 }
 
 .searchButton {
@@ -62,6 +83,9 @@
   opacity: 0.6;
 }
 
+.Results {
+  margin-left: 1% 1% 1% 1%;
+}
 .searchBar {
   text-align: center;
   display: flex;
