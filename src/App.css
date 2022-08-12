@@ -6,7 +6,7 @@
 .App {
   font-family: arial, sans-serif;
   margin: 30px auto;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: var(--secondary-color);
 }
 
@@ -26,9 +26,18 @@
 
 .searchedTerm {
   font-weight: 700;
-  margin-left: 2%;
+  /* text-align: center; */
+  padding: 3% 0% 3% 2%;
+  margin-top: 2%;
+  margin-left: 3%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  border-radius: 10px;
   text-transform: capitalize;
-  opacity: 0.9;
+  opacity: 0.8;
+  color: rgb(3, 63, 81);
+  background-color: white;
+  /* box-shadow: 0px 2px 15px 2px rgb(211, 251, 255); */
 }
 
 .phonetic {
@@ -54,6 +63,7 @@
 
 .form-control {
   user-select: all;
+  width: 80%;
 }
 
 .Meaning {
@@ -64,7 +74,7 @@
   background-color: var(--primary-color);
   color: white;
   outline: none;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 5px 5px 10px rgb(183, 238, 238);
 }
 
@@ -72,13 +82,13 @@
   background-color: var(--primary-color);
   color: white;
   outline: aquamarine;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 5px 5px 5px rgb(183, 238, 238);
   cursor: pointer;
 }
 
 .synAndAnt {
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 15px 20px;
 }
 
 .example {
@@ -95,7 +105,7 @@
 .Results {
   margin-left: 1% 1% 1% 1%;
   background-color: rgb(243, 254, 255);
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 15px 10px 10px 10px;
 }
 .searchBar {

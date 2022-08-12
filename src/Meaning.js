@@ -37,7 +37,7 @@ export default function Meaning(props) {
                 </div>
               </h6>
             </span>
-            <br />
+      
           </div>
         );
       })}
