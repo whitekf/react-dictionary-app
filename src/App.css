@@ -28,15 +28,16 @@
   font-weight: 700;
   margin-left: 2%;
   text-transform: capitalize;
+  opacity: 0.9;
 }
 
 .phonetic {
-  margin-left: 3%;
-  font-size: 26px;
+  margin-left: 4%;
+  opacity: 0.8;
 }
 
 .phoneticTitle {
-  margin-left: 3%;
+  margin-left: 4%;
   opacity: 0.8;
 }
 
@@ -64,7 +65,7 @@
   color: white;
   outline: none;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px rgb(183, 238, 238);
+  box-shadow: 5px 5px 10px rgb(183, 238, 238);
 }
 
 .searchButton:hover {
@@ -76,15 +77,26 @@
   cursor: pointer;
 }
 
+.synAndAnt {
+  padding: 0px 20px 0px 20px;
+}
+
+.example {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
 .secret {
   text-align: center;
   color: rgb(34, 109, 132);
-  padding: 10px 10px 0px 10px;
   opacity: 0.6;
 }
 
 .Results {
   margin-left: 1% 1% 1% 1%;
+  background-color: rgb(243, 254, 255);
+  border-radius: 10px;
+  padding: 15px 10px 10px 10px;
 }
 .searchBar {
   text-align: center;

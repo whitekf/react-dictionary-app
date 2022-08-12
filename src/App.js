@@ -1,5 +1,4 @@
 import "./App.css";
-import "./Dictionary.css";
 import React from "react";
 import Dictionary from "./Dictionary";
 // import KassLogo from "./KassLogo.jpg";
