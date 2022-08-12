@@ -4,6 +4,67 @@ import Dictionary from "./Dictionary";
 // import KassLogo from "./KassLogo.jpg";
 
 export default function App() {
+  let arrayOfTerms = [
+    "bemused",
+    "banal",
+    "contrive",
+    "colloquial",
+    "deferential",
+    "existential",
+    "facetious",
+    "fortuitous",
+    "incongruous",
+    "inflammable",
+    "infamous",
+    "modicum",
+    "moot",
+    "myriad",
+    "nuance",
+    "paradox",
+    "penchant",
+    "perfunctory",
+    "peruse",
+    "plethora",
+    "deliniate",
+    "extrapolate",
+    "dysania",
+    "serendipity",
+    "quixotic",
+    "caruncle",
+    "agelast",
+    "osculator",
+    "limerance",
+    "atrate",
+    "metanoia",
+    "pauciloquent",
+    "jamais-vu",
+    "laodicean",
+    "cacoethes",
+    "vaticinate",
+    "zoilism",
+    "mephitic",
+    "febrile",
+    "tittle",
+    "idoneous",
+    "kenspeckle",
+    "equivocate",
+    "tergiversate",
+    "gigle",
+    "malarkey",
+    "bravado",
+    "darkle",
+    "interfenestration",
+    "scintillate",
+    "sparsile",
+    "jentacular",
+    "tittynope",
+    "absquatulate",
+    "blatherskite",
+  ];
+  const date = new Date();
+  let ms = date.getMilliseconds() % 9;
+  let defaultTerm = arrayOfTerms[ms];
+
   return (
     <div className="App">
       <div className="container">
@@ -21,7 +82,8 @@ export default function App() {
             />
           </a>
         </h1>
-        <Dictionary />
+
+        <Dictionary defaultTerm={defaultTerm} />
         <p></p>
         <footer className="dictionaryFooter">
           {" "}
