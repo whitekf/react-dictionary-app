@@ -1,9 +1,11 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import Dictionary from "./Dictionary";
 // import KassLogo from "./KassLogo.jpg";
 
 export default function App() {
+  let [wordOfDay, setWordOfDay] = useState(true);
+
   let arrayOfTerms = [
     "bemused",
     "banal",
@@ -60,9 +62,47 @@ export default function App() {
     "tittynope",
     "absquatulate",
     "blatherskite",
+    "microcosm",
+    "pedantic",
+    "belie",
+    "axiom",
+    "ascertain",
+    "idempotent",
+    "premise",
+    "conjecture",
+    "paradigm",
+    "teem",
+    "inductive",
+    "incredulous",
+    "laudable",
+    "postulate",
+    "supposition",
+    "transient",
+    "transitory",
+    "epistimology",
+    "comport",
+    "contrition",
+    "subsequent",
+    "concurrency",
+    "anomoloaus",
+    "inumerate",
+    "autonymous",
+    "defacto",
+    "overzealous",
+    "impervious",
+    "nihilism",
+    "spirtual",
+    "certitude",
+    "flippant",
+    "diffidence",
+    "disputation",
+    "veridical",
+    "pursuant",
+    "awakening",
+    "anecdotal",
   ];
   const date = new Date();
-  let ms = date.getMilliseconds() % 9;
+  let ms = date.getMilliseconds() % 42;
   let defaultTerm = arrayOfTerms[ms];
 
   return (
