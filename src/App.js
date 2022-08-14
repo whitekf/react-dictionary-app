@@ -1,11 +1,9 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import Dictionary from "./Dictionary";
 // import KassLogo from "./KassLogo.jpg";
 
 export default function App() {
-  let [wordOfDay, setWordOfDay] = useState(true);
-
   let arrayOfTerms = [
     "bemused",
     "banal",
