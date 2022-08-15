@@ -10,15 +10,15 @@ export default function Meaning(props) {
     <div className="Meaning">
       <h6>
         {" "}
-        <strong> Part of Speech:</strong>{" "}
+        <strong className="partOfSpeechTitle"> Part of Speech:</strong>{" "}
         <span className="speechPart">{props.meaning.partOfSpeech} </span>
       </h6>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
             <h6>
-              <strong> 💠 Definition: </strong>
-              {definition.definition}
+              <strong className="definitionTitle"> 💠 Definition: </strong>
+              <span className="definition"> {definition.definition} </span>
             </h6>
 
             <span>
@@ -26,18 +26,18 @@ export default function Meaning(props) {
               <h6 className="example">
                 -🔹 Example: <em> {definition.example}</em>
               </h6>
-              <h6>
-                <div className="row synAndAnt">
-                  <span className="col-6">
-                    <Synonyms synonyms={definition.synonyms} />
-                  </span>
-                  <span className="col-6">
-                    <Antonyms antonyms={definition.antonyms} />
-                  </span>
-                </div>
-              </h6>
             </span>
-      
+            <h6>
+              <div className="row synAndAnt">
+                <span className="col-6">
+                  <Synonyms synonyms={props.meaning.synonyms} />
+                </span>
+                <span className="col-6">
+                  <Antonyms antonyms={props.meaning.antonyms} />
+                </span>
+                <div className="lineBreak">__________________________</div>
+              </div>
+            </h6>
           </div>
         );
       })}

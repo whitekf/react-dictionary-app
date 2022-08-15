@@ -195,6 +195,7 @@ export default function App() {
         </h1>
 
         <Dictionary defaultTerm={defaultTerm} />
+        
         <p></p>
         <footer className="dictionaryFooter">
           {" "}
@@ -217,5 +218,6 @@ export default function App() {
         </footer>
       </div>
     </div>
+    
   );
 }

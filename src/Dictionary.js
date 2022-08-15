@@ -50,9 +50,10 @@ export default function Dictionary(props) {
             />
           </form>
         </div>
-        <br />
+     
         <div>
           <Results results={results} />
+          
         </div>
       </div>
     );
