@@ -188,7 +188,7 @@ export default function App() {
           >
             <img
               src="https://www.freeiconspng.com/uploads/blue-book-png-31.png"
-              width="70"
+              width="75"
               alt="blue book png"
             />
           </a>
