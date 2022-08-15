@@ -27,20 +27,20 @@ export default function Meaning(props) {
                 -🔹 Example: <em> {definition.example}</em>
               </h6>
             </span>
-            <h6>
-              <div className="row synAndAnt">
-                <span className="col-6">
-                  <Synonyms synonyms={props.meaning.synonyms} />
-                </span>
-                <span className="col-6">
-                  <Antonyms antonyms={props.meaning.antonyms} />
-                </span>
-                <div className="lineBreak">__________________________</div>
-              </div>
-            </h6>
           </div>
         );
       })}
+      <h6>
+        <div className="row synAndAnt">
+          <span className="col-6">
+            <Synonyms synonyms={props.meaning.synonyms} />
+          </span>
+          <span className="col-6">
+            <Antonyms antonyms={props.meaning.antonyms} />
+          </span>
+          <div className="lineBreak">__________________________</div>
+        </div>
+      </h6>
       {/* ▶️ 💠🔷🔹◼️⬛⚫🔳💭🗯️🗨️ */}
     </div>
   );

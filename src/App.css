@@ -1,6 +1,8 @@
 :root {
   --primary-color: rgb(34, 109, 132);
   --secondary-color: rgb(230, 247, 248);
+  --complementary-PRI-color: #a54510;
+  --complementary-SEC-color: #fff8f6;
 }
 
 .App {
@@ -48,7 +50,7 @@
   /* text-align: center; */
   padding: 1% 0% 0% 2%;
   font-size: 28px;
-  margin-left: 3%;
+  padding-left: 5%;
 
   margin-bottom: 3%;
   /* margin-left: 20%;
@@ -58,6 +60,8 @@
   opacity: 0.8;
   color: rgb(3, 63, 81);
   background-color: white;
+  background-color: var(--complementary-SEC-color);
+  color: var(--complementary-PRI-color);
   /* box-shadow: 0px 2px 15px 2px rgb(211, 251, 255); */
 }
 
