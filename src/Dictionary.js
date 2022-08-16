@@ -15,7 +15,7 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResonse(response) {
-    console.log(response);
+    // console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -67,6 +67,9 @@ export default function Dictionary(props) {
               className="searchButton" // btn btn-primary w-50
             />
           </form>
+          <div className="hint">
+            Try neon, sunset, cloud, wave, candy, puppy...
+          </div>
         </div>
 
         <div>

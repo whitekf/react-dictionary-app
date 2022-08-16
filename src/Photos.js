@@ -20,5 +20,16 @@ export default function Photos(props) {
     );
   } else {
     return null;
+    // (
+    //   <div className="row">
+    //     <div className="col-4">
+    //       <div className="noImgMsg">
+    //         <h3>
+    //           Sorry - no images are availabe for this one! Try another word.
+    //         </h3>
+    //       </div>
+    //     </div>
+    //   </div>
+    // );
   }
 }

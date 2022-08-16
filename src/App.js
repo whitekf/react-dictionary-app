@@ -40,14 +40,11 @@ export default function App() {
     "serendipity",
     "quixotic",
     "caruncle",
-    "agelast",
     "osculator",
     "limerance",
     "atrate",
     "metanoia",
     "pauciloquent",
-    "jamais-vu",
-    "laodicean",
     "cacoethes",
     "vaticinate",
     "zoilism",
@@ -65,7 +62,6 @@ export default function App() {
     "interfenestration",
     "scintillate",
     "sparsile",
-    "jentacular",
     "tittynope",
     "absquatulate",
     "blatherskite",
@@ -195,7 +191,7 @@ export default function App() {
         </h1>
 
         <Dictionary defaultTerm={defaultTerm} />
-        
+
         <p></p>
         <footer className="dictionaryFooter">
           {" "}
@@ -218,6 +214,5 @@ export default function App() {
         </footer>
       </div>
     </div>
-    
   );
 }

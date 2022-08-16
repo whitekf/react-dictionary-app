@@ -90,6 +90,13 @@
   padding: 6px 10px;
 }
 
+.hint {
+  opacity: 0.6;
+  font-size: smaller;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .listenLink {
   border: 1px solid var(--primary-color);
   box-shadow: 1px 1px 1px rgb(43, 147, 147);
