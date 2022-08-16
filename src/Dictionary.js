@@ -74,6 +74,9 @@ export default function Dictionary(props) {
 
         <div>
           <Results results={results} />
+        </div>
+        <div>
+          {" "}
           <Photos photos={photos} />
         </div>
       </div>
