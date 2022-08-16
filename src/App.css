@@ -38,6 +38,7 @@
   border-radius: 4px;
   margin: 3px 0px 3px 0px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .dictionaryHeader {
@@ -59,7 +60,7 @@
 }
 
 .definition {
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px 5px 5px 5px;
 }
 
@@ -90,7 +91,7 @@
 }
 
 .pronounciation {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .Meaning {
@@ -101,7 +102,7 @@
 .Dictionary input {
   box-shadow: 5px 5px 10px rgb(183, 238, 238);
   border: 1px solid rgb(43, 147, 147);
-  font-size: 20px;
+  font-size: 18px;
   padding: 6px 10px;
 }
 
@@ -116,9 +117,9 @@
   border: 1px solid var(--primary-color);
   box-shadow: 1px 1px 1px rgb(43, 147, 147);
   text-decoration: none;
-  padding: 5px 8px;
+  padding: 4px 6px;
   margin: 20px 20px 20px 20px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 20px;
   transition: all 150ms ease-in-out;
 }
@@ -129,9 +130,9 @@
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
-  padding: 6px 9px;
+  padding: 4px 6px;
   margin: 20px 20px 20px 20px;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 20px;
 }
 

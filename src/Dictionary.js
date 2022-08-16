@@ -67,15 +67,13 @@ export default function Dictionary(props) {
               className="searchButton" // btn btn-primary w-50
             />
           </form>
-          <div className="hint">
-            Try neon, sunset, cloud, wave, candy, puppy...
-          </div>
+          <div className="hint">Try candy, neon, sunset, cloud...</div>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-5">
             <Results results={results} />
           </div>
-          <div className="col-5 photosDisplayed">
+          <div className="col-6 photosDisplayed">
             {" "}
             <Photos photos={photos} />
           </div>
