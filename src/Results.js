@@ -4,9 +4,11 @@ import Phonetic from "./Phonetic";
 
 export default function Results(props) {
   if (props.results) {
+   
     return (
       <div className="Results">
         <h2 className="searchedTerm">{props.results.word}</h2>{" "}
+    
         <span>
           {props.results.phonetics.map(function (phonetic, index) {
             return (
@@ -16,6 +18,7 @@ export default function Results(props) {
             );
           })}
         </span>
+   
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
@@ -23,6 +26,7 @@ export default function Results(props) {
             </div>
           );
         })}
+        
       </div>
     );
   } else {

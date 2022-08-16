@@ -144,26 +144,6 @@
   opacity: 0.8;
 }
 
-.randomWord {
-  border: none;
-  background-color: var(--complementary-PRI-color);
-  color: white;
-  height: 32px;
-  outline: none;
-  border-radius: 12px;
-  box-shadow: 5px 5px 10px rgb(183, 238, 238);
-}
-
-.randomWord:hover {
-  border: none;
-  color: white;
-  height: 32px;
-  outline: aquamarine;
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px rgb(183, 238, 238);
-  cursor: pointer;
-}
-
 .searchButton {
   background-color: var(--primary-color);
   color: white;
