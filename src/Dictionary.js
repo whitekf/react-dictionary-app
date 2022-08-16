@@ -15,7 +15,7 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResonse(response) {
-    // console.log(response);
+    console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -24,7 +24,7 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${term}`;
     axios.get(apiUrl).then(handleDictionaryResponse);
 
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${term}&per_page=80`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${term}&per_page=40`;
     let pexelsApiKey =
       "563492ad6f91700001000001a57bb7d62efe456788caff1c997a7b2a";
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
@@ -71,13 +71,14 @@ export default function Dictionary(props) {
             Try neon, sunset, cloud, wave, candy, puppy...
           </div>
         </div>
-
-        <div>
-          <Results results={results} />
-        </div>
-        <div>
-          {" "}
-          <Photos photos={photos} />
+        <div className="row">
+          <div className="col-6">
+            <Results results={results} />
+          </div>
+          <div className="col-6 photosDisplayed">
+            {" "}
+            <Photos photos={photos} />
+          </div>
         </div>
       </div>
     );
