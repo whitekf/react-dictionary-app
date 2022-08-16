@@ -7,7 +7,7 @@ export default function Photos(props) {
 
   if (props.photos) {
     return (
-      <div className="Photos">
+      <div className="Photos photosDisplayed">
         <div className="row ">
           {props.photos.map(function (photo, index) {
             return (
@@ -28,7 +28,7 @@ export default function Photos(props) {
   } else {
     return (
       // null;
-      <div className="noImgs">
+      <div className="noImgs photosDisplayed">
         <div className="row">
           <div className="col-12">
             <div className="noImgMsg">
@@ -38,9 +38,8 @@ export default function Photos(props) {
                 <br></br> availabe for this one!
                 <br></br>
                 <br></br>
-                Please try another word <br></br>to <em>hopefully</em> be
-                availabe<br></br>
-                to view images.
+                Please enter another word.
+                <br></br>
               </h5>
             </div>
           </div>

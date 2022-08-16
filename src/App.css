@@ -24,23 +24,20 @@
   color: var(--complementary-PRI-color);
   opacity: 0.6;
   text-align: center;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .photosDisplayed {
   background-color: rgb(243, 254, 255);
   border-radius: 8px;
-  padding: 5px 10px 10px 5px;
   background-color: var(--complementary-SEC-color);
+  margin: 0px auto;
 }
 
 .Photos img {
   border-radius: 4px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 3px 0px 3px 0px;
+  padding-top: 10px;
 }
 
 .dictionaryHeader {

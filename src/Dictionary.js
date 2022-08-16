@@ -75,7 +75,7 @@ export default function Dictionary(props) {
           <div className="col-6">
             <Results results={results} />
           </div>
-          <div className="col-6 photosDisplayed">
+          <div className="col-5 photosDisplayed">
             {" "}
             <Photos photos={photos} />
           </div>
