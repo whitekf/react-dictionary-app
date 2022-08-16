@@ -7,14 +7,29 @@ export default function Dictionary(props) {
   let [term, setTerm] = useState(props.defaultTerm);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
-  function handleResonse(response) {
+
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
+  }
+
+  function handlePexelsResonse(response) {
+    console.log(response);
   }
 
   function search() {
     // documentation:  https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${term}`;
-    axios.get(apiUrl).then(handleResonse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
+
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${term}&per_page=1`;
+    let pexelsApiKey =
+      "563492ad6f91700001000001a57bb7d62efe456788caff1c997a7b2a";
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios
+      .get(pexelsApiUrl, {
+        headers: headers,
+      })
+      .then(handlePexelsResonse);
   }
 
   function handleSubmit(event) {
@@ -50,10 +65,9 @@ export default function Dictionary(props) {
             />
           </form>
         </div>
-     
+
         <div>
           <Results results={results} />
-          
         </div>
       </div>
     );
