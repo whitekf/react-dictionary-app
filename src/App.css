@@ -20,6 +20,11 @@
   padding-top: 20px;
 }
 
+.Photos img {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
 .dictionaryHeader {
   margin-top: 8%;
   margin-bottom: 3%;
