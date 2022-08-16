@@ -67,7 +67,9 @@ export default function Dictionary(props) {
               className="searchButton" // btn btn-primary w-50
             />
           </form>
-          <div className="hint">Try candy, neon, sunset, cloud...</div>
+          <div className="hint">
+            For neat images, try words like candy, neon, sunset, cloud, etc....
+          </div>
         </div>
         <div className="row">
           <div className="col-5">

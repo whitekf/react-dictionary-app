@@ -37,7 +37,7 @@ export default function Meaning(props) {
           <span className="col-6">
             <Antonyms antonyms={props.meaning.antonyms} />
           </span>
-          <div className="lineBreak">__________________________</div>
+          <div className="lineBreak">_____________</div>
         </div>
       </h6>
       {/* ▶️ 💠🔷🔹◼️⬛⚫🔳💭🗯️🗨️ ❇ 🇴 ✔ ⏹️ ✅ ❇️ ✳️ 📚📙📘📔 ➡ ⚜️📖 ⚜   */}
