@@ -10,6 +10,11 @@ export default function App() {
     "banal",
     "contrive",
     "colloquial",
+    "candid",
+    "lime",
+    "lemon",
+    "orange",
+    "beautiful",
     "deferential",
     "existential",
     "facetious",
@@ -396,7 +401,9 @@ export default function App() {
     "contrition",
     "abhor",
     "subsequent",
+    "details",
     "concurrency",
+    "resume",
     "anomoloaus",
     "inumerate",
     "arcade",
@@ -417,10 +424,14 @@ export default function App() {
     "ocean",
     "autonymous",
     "defacto",
+    "glamorous",
     "overzealous",
+    "famous",
     "impervious",
     "nihilism",
+    "generations",
     "spirtual",
+    "celebrity",
     "certitude",
     "flippant",
     "boat",
@@ -480,7 +491,7 @@ export default function App() {
           >
             Kassie White
           </a>{" "}
-          and it is{" "}
+          and is{" "}
           <a
             href="https://github.com/whitekf/react-dictionary-app"
             target="_blank"

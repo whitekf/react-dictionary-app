@@ -49,6 +49,24 @@ export default function Photos(props) {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div className="noImgs">
+        <div className="row">
+          <div className="col-12">
+            <div className="noImgMsg">
+              <h5>
+                <br></br>
+                Sorry - no images are
+                <br></br> availabe for this one!
+                <br></br>
+                <br></br>
+                Please enter another word.
+                <br></br>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
