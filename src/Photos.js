@@ -25,10 +25,12 @@ export default function Photos(props) {
         </div>
       </div>
     );
-  } else {
+  }
+
+  if (!props.photos) {
+    // console.log("LENGTH" + props.photos.length());
     return (
-      // null;
-      <div className="noImgs photosDisplayed">
+      <div className="noImgs">
         <div className="row">
           <div className="col-12">
             <div className="noImgMsg">
@@ -46,8 +48,7 @@ export default function Photos(props) {
         </div>
       </div>
     );
+  } else {
+    return null;
   }
-  //   else {
-  //     return null;
-  //   }
 }
