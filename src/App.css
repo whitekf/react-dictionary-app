@@ -27,6 +27,10 @@
   margin: 20px auto;
 }
 
+.noImgs {
+  margin: 30px auto;
+}
+
 .photosDisplayed {
   background-color: rgb(243, 254, 255);
   border-radius: 8px;
